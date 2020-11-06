@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training HTML</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul li a{
+            color:white;
+            text-decoration: none;
+            line-height: 20px;
+        }
+
+        .main{
+            overflow: hidden;
+            padding: 0px;
+            margin: 0px;
+        }
+        .main > li{
+            float: left;
+            width: 300px;
+            padding: 0px;
+            background-color: red;
+            border-right: 2px solid rgb(124, 26, 26);
+        }
+        .main > li > a{
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+        .main > li > a:hover{
+            background-color: white;
+            color:black;
+        }
+        .main > li:hover .submain{
+            display: block;
+        }
+        .submain{
+            display: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .submain > li{
+            padding: 0px;
+            border-bottom: 2px solid rgb(124, 26, 26);
+        }
+        .submain >li > a{
+            display:block;
+            padding: 7px;
+            text-align: center;
+        }
+        .submain > li > a:hover{
+            background-color: white;
+            color:black;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <ul class="main">
+        <li>
+            <a href="#">Mobile Development</a>
+            <ul class="submain">
+                <li><a href="#">Java</a></li>
+                <li><a href="#">Kotlin</a></li>
+                <li><a href="#">Swift</a></li>
+                <li><a href="#">Flutter</a></li>
+                <li><a href="#">React Native</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Web Development</a>
+            <ul class="submain">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">Bootstrap</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Game Development</a>
+            <ul class="submain">
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Unreal Engine</a></li>
+                <li><a href="#">C#</a></li>
+                <li><a href="#">Unity Engine</a></li>
+                <li><a href="#">Game Math and Physics</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Programming Languages</a>
+            <ul class="submain">
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">C#</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        alert("This is about how to create drop-down menu");
+    </script>
+</body>
+</html>
