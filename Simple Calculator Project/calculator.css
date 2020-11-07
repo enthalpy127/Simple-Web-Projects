@@ -1,0 +1,62 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(63, 58, 61);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#main-div{
+    border:2px solid rgb(63, 58, 61);
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 12px;
+    box-shadow: 5px 5px 6px black, -2px -2px 3px rgb(68, 67, 67);
+}
+
+#main-div #cal{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main-div #cal .display{
+    border:2px solid rgb(63, 58, 61);
+    width: fit-content;
+    margin: auto;
+}
+
+#main-div #cal .display #display{
+    width: 300px;
+    border-radius: 12px;
+    height: 35px;
+    border: 1px solid rgb(63, 58, 61);
+    box-shadow: 5px 5px 6px rgb(19, 18, 18), -5px -5px 6px rgb(63, 58, 61);
+}
+
+#main-div #cal .buttons{
+    width: fit-content;
+    margin: auto;
+}
+
+#main-div #cal .buttons .button{
+    width: 67px;
+    height: 67px;
+    margin: 10px;
+    border: 2px solid rgb(63, 58, 61);
+    border-radius: 50px;
+    box-shadow: 3px 3px 6px rgb(19, 18, 18), -3px -3px 6px rgb(63, 58, 61);
+}
+
+#main-div #cal .buttons .button:hover{
+    box-shadow: 5px 5px 3px rgb(19, 18, 18), -2px -2px 3px rgb(68, 67, 67);
+    background-color: rgb(63, 58, 61);
+    color:white;
+}
+
+#main-div #cal .buttons .button:active{
+    border: none;
+}
