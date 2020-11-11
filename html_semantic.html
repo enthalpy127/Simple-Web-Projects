@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Elements</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            font-size: xx-large;
+            background-color: chartreuse;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav{
+            background-color: grey;
+            padding: 15px;
+        }
+        nav a{
+            text-decoration: none;
+            color:white;
+            padding: 15px;
+        }
+        nav a:hover{
+            background-color: rgb(67, 250, 50);
+            color: black;
+        }
+        section{
+            background-color: rgb(226, 226, 226);
+            padding: 10px;
+            overflow: hidden;
+        }
+        section article,aside{
+            padding: 5px;
+        }
+        section article{
+            width: 60%;
+            float: left;
+        }
+        section aside{
+            width: 20%;
+            float:left;
+            background-color: rgb(59, 59, 59);
+            color:white;
+            margin-top: 40px;
+        }
+        section figure{
+            width: 20%;
+            width: fit-content;
+            float: right;
+        }
+        footer{
+            background-color: rgb(22, 21, 21);
+            color:white;
+            padding: 10px;
+            text-align: center;
+        }
+        @media screen and (max-width: 1200px){
+            section figure{
+                display: none;
+            }
+            section article{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width:700px) {
+            section article{
+                width: 100%;
+                float: none;
+            }
+            section aside{
+                width: 100%;
+                float: none;
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>The Complete Web Design Course</header>
+    <nav>
+        <a href="">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">jQuery</a>
+        <a href="#">Bootstrap</a>
+    </nav>
+    <section>
+        <article>
+            <h1>This section introduces about the complete web design course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae officiis sit explicabo, incidunt sint praesentium laborum molestias corporis. Eaque tenetur distinctio ipsa odit nostrum inventore quos ea rerum porro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita nemo debitis incidunt fugit suscipit at! Ullam inventore ipsam, tempora corporis labore quia incidunt modi reiciendis pariatur corrupti, quaerat dolore.</p>
+        </article>
+        <aside>
+            HTML is very easy to learn. CSS is also easy to learn at the basic moment. But it is hard to master. But JavaScript is the most popular language and it is also very easy to learn. 
+        </aside>
+        <figure>
+            <img src="https://www.html5rocks.com/static/demos/svgmobile_fundamentals/images/html5-640x960.png" alt="html image" width="150px" height="200px">
+        </figure>
+    </section>
+    <footer>
+        Copyright &#169; 2020 by Enthalpy
+        <address>
+            Contact me on <a href="#">Facebook</a><br>
+            Yangon, Myanmar
+        </address>
+    </footer>
+</body>
+</html>
