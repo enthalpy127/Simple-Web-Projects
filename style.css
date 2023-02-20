@@ -1,0 +1,75 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    font-size: xx-large;
+    background-color: chartreuse;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav{
+    background-color: grey;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+}
+nav a:hover{
+    background-color: rgb(67, 250, 50);
+    color: black;
+}
+section{
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    overflow: hidden;
+}
+section article,aside{
+    padding: 5px;
+}
+section article{
+    width: 60%;
+    float: left;
+}
+section aside{
+    width: 20%;
+    float:left;
+    background-color: rgb(59, 59, 59);
+    color:white;
+    margin-top: 40px;
+}
+section figure{
+    width: 20%;
+    width: fit-content;
+    float: right;
+}
+footer{
+    background-color: rgb(22, 21, 21);
+    color:white;
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 1200px){
+    section figure{
+        display: none;
+    }
+    section article{
+        width: 80%;
+    }
+}
+@media screen and (max-width:700px) {
+    section article{
+        width: 100%;
+        float: none;
+    }
+    section aside{
+        width: 100%;
+        float: none;
+        margin-top: 0px;
+    }
+}
